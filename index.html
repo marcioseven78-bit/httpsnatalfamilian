@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Natal Família — Black Friday 45% OFF em Enfeites e Temas Natalinos</title>
+  <meta name="description" content="Natal Família: enfeites, árvores, iluminação e kits temáticos de Natal com 45% de desconto na Black Friday. Compra segura, pagamento via PIX." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎄</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,800&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="bf-bar" role="note">
+    <span class="bf-pill">BLACK FRIDAY</span>
+    <span><strong>45% OFF</strong> em toda a loja • Ofertas especiais • Pagamento via <strong>PIX</strong></span>
+    <span class="countdown" id="countdown" aria-live="polite"></span>
+  </div>
+
+  <header class="header">
+    <a href="#" class="logo" aria-label="Natal Família — início">
+      <span class="logo-mark" aria-hidden="true">✦</span>
+      <span class="logo-text">Natal <em>Família</em></span>
+    </a>
+    <nav class="nav">
+      <a href="#produtos">Produtos</a>
+      <a href="#temas">Temas</a>
+      <a href="#seguranca">Compra segura</a>
+    </nav>
+    <button class="cart-btn" id="openCart" aria-label="Abrir carrinho">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM5.2 4l.6 3H21l-2.2 8.2a2 2 0 0 1-1.9 1.5H8.4a2 2 0 0 1-2-1.6L4 2H1V0h4.6l.6 4Z" transform="translate(0 1)"/></svg>
+      <span>Carrinho</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="snow" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Enfeites &amp; temas natalinos</p>
+        <h1>O Natal da sua família, <span>45% mais barato.</span></h1>
+        <p class="lead">Árvores, bolas, luzes e kits temáticos completos para deixar a casa pronta para a noite mais especial do ano. Só nesta Black Friday.</p>
+        <div class="hero-cta">
+          <a href="#produtos" class="btn btn-gold">Ver ofertas</a>
+          <span class="pix-note"><span class="pix-logo" aria-hidden="true">◆</span> Pagamento via PIX • confira os dados antes de confirmar</span>
+        </div>
+      </div>
+      <div class="hero-badge" aria-hidden="true">
+        <div class="tag-ring">
+          <span class="tag-small">Black Friday</span>
+          <span class="tag-big">45<small>%</small></span>
+          <span class="tag-small">OFF em tudo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Garantias">
+      <div><span>🔒</span> Conexão protegida</div>
+      <div><span>◆</span> Pagamento via PIX</div>
+      <div><span>🚚</span> Consulte condições de entrega</div>
+      <div><span>🎁</span> Embalagem caprichada</div>
+    </section>
+
+    <section id="temas" class="themes">
+      <p class="section-kicker">Inspire-se</p><h2>Escolha o tema do seu Natal</h2><p class="section-intro">Detalhes especiais para montar uma decoração acolhedora e cheia de brilho.</p>
+      <div class="theme-grid">
+        <button class="theme theme-classic" data-filter="Kits Temáticos"><strong>Clássico</strong><span>Vermelho &amp; ouro</span></button>
+        <button class="theme theme-nordic" data-filter="Kits Temáticos"><strong>Nórdico</strong><span>Branco &amp; madeira</span></button>
+        <button class="theme theme-lights" data-filter="Iluminação"><strong>Iluminado</strong><span>Luzes quentes</span></button>
+        <button class="theme theme-table" data-filter="Mesa Posta"><strong>Ceia</strong><span>Mesa posta</span></button>
+      </div>
+    </section>
+
+    <section id="produtos" class="products">
+      <div class="products-head">
+        <div><p class="section-kicker">Seleção especial</p><h2>Ofertas para celebrar</h2><p class="section-intro">Escolha seus favoritos e monte o clima de Natal em casa.</p></div>
+        <div class="filters" id="filters" role="tablist" aria-label="Filtrar por categoria"></div>
+      </div>
+      <div class="grid" id="grid"><p class="loading">Carregando enfeites…</p></div>
+    </section>
+
+    <section id="seguranca" class="security">
+      <div class="seal" aria-label="Selo de compra segura">
+        <svg viewBox="0 0 120 140" width="120" height="140" aria-hidden="true">
+          <path d="M60 4 112 22v40c0 34-22 60-52 74C30 122 8 96 8 62V22Z" fill="#0f5132" stroke="#d4a64a" stroke-width="5"/>
+          <path d="M60 18 98 31v31c0 26-16 46-38 57-22-11-38-31-38-57V31Z" fill="none" stroke="#d4a64a" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <rect x="42" y="58" width="36" height="30" rx="4" fill="#fff"/>
+          <path d="M49 58v-8a11 11 0 0 1 22 0v8" fill="none" stroke="#fff" stroke-width="6"/>
+          <circle cx="60" cy="71" r="4" fill="#0f5132"/><rect x="58" y="72" width="4" height="9" fill="#0f5132"/>
+          <text x="60" y="108" text-anchor="middle" font-family="Outfit, sans-serif" font-size="11" font-weight="700" fill="#d4a64a">100% SEGURO</text>
+        </svg>
+      </div>
+      <div class="security-copy">
+        <h2>Compre com atenção e segurança</h2>
+        <ul>
+          <li><strong>Conexão HTTPS:</strong> confira o cadeado do navegador antes de informar seus dados.</li>
+          <li><strong>Pagamento via PIX:</strong> pague pelo aplicativo do seu banco. Nunca compartilhe senhas ou códigos.</li>
+          <li><strong>Confira antes de pagar:</strong> confirme o nome do recebedor e o valor exibidos no aplicativo do banco.</li>
+        </ul>
+        <div class="badges">
+          <span class="badge badge-ssl">🔒 SSL Seguro</span>
+          <span class="badge badge-pix">◆ PIX</span>
+          <span class="badge badge-site">✔ Site Protegido</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo-text">Natal <em>Família</em></div>
+    <p>Enfeites e temas natalinos para toda a família.</p>
+    <div class="footer-badges">
+      <span class="badge badge-ssl">🔒 Compra Segura</span>
+      <span class="badge badge-pix">◆ Aceitamos somente PIX</span>
+    </div>
+    <small>© <span id="year"></span> Natal Família. Consulte as condições e a disponibilidade dos produtos.</small>
+  </footer>
+
+  <!-- Carrinho -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Carrinho" aria-hidden="true">
+    <div class="drawer-head">
+      <h3 id="drawerTitle">Seu carrinho</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Fechar">×</button>
+    </div>
+
+    <div class="drawer-body" id="stepCart">
+      <ul class="cart-items" id="cartItems"></ul>
+      <div class="totals" id="totals"></div>
+      <button class="btn btn-gold btn-block" id="toCheckout">Finalizar com PIX</button>
+      <p class="secure-line">🔒 Ambiente seguro • Pagamento somente PIX</p>
+    </div>
+
+    <form class="drawer-body" id="stepCheckout" hidden>
+      <label>Nome completo<input name="name" required autocomplete="name" /></label>
+      <label>E-mail<input name="email" type="email" required autocomplete="email" /></label>
+      <label>WhatsApp / Telefone<input name="phone" required autocomplete="tel" inputmode="tel" /></label>
+      <label>Endereço de entrega (rua, número, bairro, cidade, CEP)<textarea name="address" rows="3" required autocomplete="street-address"></textarea></label>
+      <div class="totals" id="totals2"></div>
+      <p class="form-error" id="formError" role="alert"></p>
+      <button class="btn btn-gold btn-block" type="submit" id="placeOrder">Gerar PIX</button>
+      <button class="btn btn-ghost btn-block" type="button" id="backToCart">Voltar ao carrinho</button>
+    </form>
+
+    <div class="drawer-body pix-step" id="stepPix" hidden>
+      <p class="pix-title"><span class="pix-logo">◆</span> Pague com PIX</p>
+      <p class="order-code">Pedido <strong id="orderCode"></strong></p>
+      <img id="pixQr" alt="QR Code PIX do pedido" width="240" height="240" />
+      <p class="pix-amount" id="pixAmount"></p>
+      <label class="copy-label">PIX Copia e Cola
+        <textarea id="pixCode" rows="4" readonly></textarea>
+      </label>
+      <button class="btn btn-gold btn-block" id="copyPix">Copiar código PIX</button>
+      <ol class="pix-steps">
+        <li>Abra o app do seu banco e escolha <strong>Pagar com PIX</strong>.</li>
+        <li>Escaneie o QR Code ou cole o código.</li>
+        <li>Confira o recebedor <strong>NATAL FAMILIA</strong> e confirme.</li>
+      </ol>
+      <p class="secure-line">🔒 Pedido criado. A loja ainda precisa confirmar o recebimento do pagamento. Guarde o número do pedido.</p>
+      <button class="btn btn-ghost btn-block" id="newOrder">Continuar comprando</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
